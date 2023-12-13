@@ -39,11 +39,12 @@ namespace ClipsFormsExample
             // btnClose
             // 
             this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnClose.Location = new System.Drawing.Point(256, 391);
+            this.btnClose.Location = new System.Drawing.Point(228, 313);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(127, 45);
+            this.btnClose.Size = new System.Drawing.Size(113, 36);
             this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "Готово";
+            this.btnClose.Text = "Выбрать";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -51,19 +52,20 @@ namespace ClipsFormsExample
             // 
             this.labelDescription.AutoEllipsis = true;
             this.labelDescription.AutoSize = true;
-            this.labelDescription.Location = new System.Drawing.Point(11, 9);
-            this.labelDescription.MaximumSize = new System.Drawing.Size(368, 0);
+            this.labelDescription.Location = new System.Drawing.Point(10, 7);
+            this.labelDescription.MaximumSize = new System.Drawing.Size(327, 0);
             this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(232, 20);
+            this.labelDescription.Size = new System.Drawing.Size(72, 16);
             this.labelDescription.TabIndex = 2;
-            this.labelDescription.Text = "Тут будет красивое описание";
+            this.labelDescription.Text = "Описание";
             // 
             // trackBar
             // 
-            this.trackBar.Location = new System.Drawing.Point(15, 391);
+            this.trackBar.Location = new System.Drawing.Point(13, 313);
+            this.trackBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBar.Maximum = 100;
             this.trackBar.Name = "trackBar";
-            this.trackBar.Size = new System.Drawing.Size(228, 69);
+            this.trackBar.Size = new System.Drawing.Size(203, 56);
             this.trackBar.TabIndex = 3;
             this.trackBar.TickFrequency = 0;
             this.trackBar.TickStyle = System.Windows.Forms.TickStyle.Both;
@@ -72,28 +74,30 @@ namespace ClipsFormsExample
             // checkedListBox
             // 
             this.checkedListBox.FormattingEnabled = true;
-            this.checkedListBox.ItemHeight = 20;
-            this.checkedListBox.Location = new System.Drawing.Point(15, 50);
+            this.checkedListBox.ItemHeight = 16;
+            this.checkedListBox.Location = new System.Drawing.Point(13, 40);
+            this.checkedListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkedListBox.Name = "checkedListBox";
-            this.checkedListBox.Size = new System.Drawing.Size(368, 324);
+            this.checkedListBox.Size = new System.Drawing.Size(328, 260);
             this.checkedListBox.TabIndex = 4;
             this.checkedListBox.SelectedIndexChanged += new System.EventHandler(this.checkedListBox_SelectedIndexChanged);
             // 
             // AskingDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 462);
+            this.ClientSize = new System.Drawing.Size(355, 370);
             this.ControlBox = false;
             this.Controls.Add(this.checkedListBox);
             this.Controls.Add(this.trackBar);
             this.Controls.Add(this.labelDescription);
             this.Controls.Add(this.btnClose);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AskingDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "К вам вопросы...";
+            this.Text = "Заполните анкету";
             ((System.ComponentModel.ISupportInitialize)(this.trackBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

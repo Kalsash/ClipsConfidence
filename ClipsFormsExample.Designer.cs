@@ -56,18 +56,18 @@
             this.panel2.Controls.Add(this.saveAsButton);
             this.panel2.Controls.Add(this.openButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 587);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(0, 470);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1482, 83);
+            this.panel2.Size = new System.Drawing.Size(1317, 66);
             this.panel2.TabIndex = 6;
             // 
             // fontButton
             // 
-            this.fontButton.Location = new System.Drawing.Point(460, 18);
-            this.fontButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.fontButton.Location = new System.Drawing.Point(409, 14);
+            this.fontButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fontButton.Name = "fontButton";
-            this.fontButton.Size = new System.Drawing.Size(180, 46);
+            this.fontButton.Size = new System.Drawing.Size(160, 37);
             this.fontButton.TabIndex = 9;
             this.fontButton.Text = "Шрифт...";
             this.fontButton.UseVisualStyleBackColor = true;
@@ -76,10 +76,10 @@
             // nextButton
             // 
             this.nextButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.nextButton.Location = new System.Drawing.Point(1282, 18);
-            this.nextButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nextButton.Location = new System.Drawing.Point(1140, 14);
+            this.nextButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(180, 46);
+            this.nextButton.Size = new System.Drawing.Size(160, 37);
             this.nextButton.TabIndex = 8;
             this.nextButton.Text = "Дальше";
             this.nextButton.UseVisualStyleBackColor = true;
@@ -88,10 +88,10 @@
             // resetButton
             // 
             this.resetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.resetButton.Location = new System.Drawing.Point(1094, 18);
-            this.resetButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.resetButton.Location = new System.Drawing.Point(972, 14);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new System.Drawing.Size(180, 46);
+            this.resetButton.Size = new System.Drawing.Size(160, 37);
             this.resetButton.TabIndex = 7;
             this.resetButton.Text = "Рестарт";
             this.resetButton.UseVisualStyleBackColor = true;
@@ -99,10 +99,10 @@
             // 
             // saveAsButton
             // 
-            this.saveAsButton.Location = new System.Drawing.Point(271, 18);
-            this.saveAsButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.saveAsButton.Location = new System.Drawing.Point(241, 14);
+            this.saveAsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.saveAsButton.Name = "saveAsButton";
-            this.saveAsButton.Size = new System.Drawing.Size(180, 46);
+            this.saveAsButton.Size = new System.Drawing.Size(160, 37);
             this.saveAsButton.TabIndex = 6;
             this.saveAsButton.Text = "Сохранить как...";
             this.saveAsButton.UseVisualStyleBackColor = true;
@@ -110,10 +110,10 @@
             // 
             // openButton
             // 
-            this.openButton.Location = new System.Drawing.Point(31, 18);
-            this.openButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.openButton.Location = new System.Drawing.Point(28, 14);
+            this.openButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.openButton.Name = "openButton";
-            this.openButton.Size = new System.Drawing.Size(232, 46);
+            this.openButton.Size = new System.Drawing.Size(206, 37);
             this.openButton.TabIndex = 5;
             this.openButton.Text = "Выбрать папку с базой";
             this.openButton.UseVisualStyleBackColor = true;
@@ -132,6 +132,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -141,8 +142,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.outputBox);
-            this.splitContainer1.Size = new System.Drawing.Size(1482, 587);
-            this.splitContainer1.SplitterDistance = 856;
+            this.splitContainer1.Size = new System.Drawing.Size(1317, 470);
+            this.splitContainer1.SplitterDistance = 760;
             this.splitContainer1.TabIndex = 7;
             // 
             // codeBox
@@ -151,9 +152,10 @@
             this.codeBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.codeBox.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.codeBox.Location = new System.Drawing.Point(0, 0);
+            this.codeBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.codeBox.Name = "codeBox";
             this.codeBox.ReadOnly = true;
-            this.codeBox.Size = new System.Drawing.Size(856, 587);
+            this.codeBox.Size = new System.Drawing.Size(760, 470);
             this.codeBox.TabIndex = 0;
             this.codeBox.Text = "";
             // 
@@ -163,25 +165,26 @@
             this.outputBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.outputBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.outputBox.Location = new System.Drawing.Point(0, 0);
+            this.outputBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.outputBox.Name = "outputBox";
             this.outputBox.ReadOnly = true;
-            this.outputBox.Size = new System.Drawing.Size(622, 587);
+            this.outputBox.Size = new System.Drawing.Size(553, 470);
             this.outputBox.TabIndex = 0;
             this.outputBox.Text = "";
             this.outputBox.TextChanged += new System.EventHandler(this.outputBox_TextChanged);
             // 
             // ClipsFormsExample
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1482, 670);
+            this.ClientSize = new System.Drawing.Size(1317, 536);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(979, 431);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(872, 354);
             this.Name = "ClipsFormsExample";
-            this.Text = "АлкоТиндер";
+            this.Text = "Конструктор ноутбуков";
             this.panel2.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

@@ -12,10 +12,10 @@ namespace ClipsFormsExample
         {
             switch (type)
             {
-                case "fia": return InitialFactType.DRINK_TYPE;
+                case "fia": return InitialFactType.CORES;
                 case "fib": return InitialFactType.BUDGET;
-                case "fic": return InitialFactType.COMPANY_SIZE;
-                case "fil": return InitialFactType.LOCATION;
+                case "fic": return InitialFactType.GRAPHICS;
+                case "fil": return InitialFactType.MEMORY;
                 case "fi": return InitialFactType.FEATURE;
                 case "fn": return InitialFactType.OPPOSITE_FEATURE;
                 default: throw new Exception("Типы фактов всё сломали :(");

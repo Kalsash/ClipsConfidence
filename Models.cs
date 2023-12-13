@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClipsFormsExample
 {
-    public enum InitialFactType { DRINK_TYPE, BUDGET, LOCATION, COMPANY_SIZE, FEATURE, COMMON, OPPOSITE_FEATURE };
+    public enum InitialFactType { CORES, BUDGET, MEMORY, GRAPHICS, FEATURE, COMMON, OPPOSITE_FEATURE };
 
     public class Rule
     {
