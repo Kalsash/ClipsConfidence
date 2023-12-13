@@ -235,10 +235,22 @@ namespace ClipsFormsExample
                 loadDB();
                 codeBox.Text = clipsCode = generateCLIPScode();
                 setState(true);
-                var builder = new PromptBuilder();
-                builder.AppendTextWithPronunciation("Смотрите", "smɐtrʲiˈtʲe");
-                builder.AppendText("какой красивый код я");
-                builder.AppendTextWithPronunciation("нагенерировала","nɐɡʲɪnʲɪrʲiˈrovələ");
+                outputBox.Text = "Выполнены команды Clear и Reset." + System.Environment.NewLine;
+                //roboWoman.SpeakAsync("Начинаем веселиться!");
+                finalChoice = new List<KeyValuePair<string, double>>();
+                iterationCounter = 0;
+                //  Здесь сохранение в файл, и потом инициализация через него
+                clips.Clear();
+
+                //  Так тоже можно - без промежуточного вывода в файл
+                clips.LoadFromString(clipsCode);
+
+                clips.Reset();
+
+                //var builder = new PromptBuilder();
+                //builder.AppendTextWithPronunciation("Смотрите", "smɐtrʲiˈtʲe");
+                //builder.AppendText("какой красивый код я");
+                //builder.AppendTextWithPronunciation("нагенерировала","nɐɡʲɪnʲɪrʲiˈrovələ");
                 //roboWoman.SpeakAsync(builder);
             }
         }
