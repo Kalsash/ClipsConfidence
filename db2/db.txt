@@ -1,0 +1,249 @@
+fi-17;подсветка_клавиатуры
+fn-89-17;подсветка_клавиатуры_не_нужна
+fi-22;есть_ОС
+fn-97-22;ОС_не_нужна
+fi-30;два_доп_usb
+fn-23-30;доп_usb_не_нужен
+fi-24;запасной_аккумулятор
+fn-92-24;запасной_аккумулятор_не_нужен
+fi-26;гарнитура
+fn-95-26;гарнитура_не_нужна
+fi-28;охлаждающая_подставка
+fn-98-28;охлаждающая_подставка_не_нужна
+fi-107;чехол
+fn-108-107;чехол_не_нужен
+fi-110;сумка_для_ноутбука
+fn-111-110;сумка_для_ноутбука_не_нужна
+fia-1;16_ядер
+fia-2;12_ядер
+fia-3;8_ядер
+fia-4;4_ядра
+fia-5;2_ядра
+fia-6;6_ядер
+fib-7;1000$
+fib-8;2000$
+fib-9;3000$
+fib-10;4000$
+fil-39;4070
+fil-40;3050
+fil-41;2050
+fil-42;1650
+fil-43;встроенная
+fic-68;64ГБ
+fic-32;32ГБ
+fic-66;16ГБ
+fic-31;8ГБ
+fic-33;4ГБ
+ff-73;AcerA515Base
+ff-103;Predator4100Pro
+ff-342;Predator4100LimitedEdition
+ff-343;Predator4100Large
+ff-44;MsiTitanGT77Cute
+ff-45;MsiTitanGT77Pro
+ff-46;AcerA515HPhones
+ff-47;Slealth14Add
+ff-48;Slealth14Pro
+ff-49;Slealth14Base
+ff-50;AsusGameTufGreat
+ff-51;AsusGameTufLimitedEdition
+ff-52;AsusGameTufLight
+ff-53;AsusGameTufLarge
+ff-54;LenovoFX203Pro
+ff-55;LenovoFX203Base
+ff-56;HuaweiMateBookBase
+ff-57;HuaweiMateBookPro
+ff-58;HuaweiMateBookOS
+ff-59;Corebook14Pro
+ff-60;Corebook14Base
+ff-61;Corebook14OS
+ff-62;AcerExtensa15Base
+ff-63;AcerExtensa15Pro
+ff-64;AcerExtensa15OS
+ff-65;LenovoIdeaPadBase
+ff-666;LenovoIdeaPadPro
+ff-67;LenovoIdeaPadOC
+f-201;AMDRyzen9
+f-202;IntelCorei9
+f-203; Corsar64GB
+f-204; HyperX64GB
+f-205; GeForce4070
+f-206; 3000$-4000$
+f-207; Predator4100
+f-208; базовая_версия
+f-209; AMDRyzen7
+f-210; IntelCorei7
+f-211; AMDRyzen5
+f-212; IntelCorei5
+f-213; AMDRyzen3
+f-214; IntelCorei3
+f-215; Pentium2
+f-216; AMDFX6300
+f-217; GeForce3050
+f-218; GeForce2050
+f-219; GeForce1650
+f-220; встроенная
+f-221; 0$-1000$
+f-222; 1000$-2000$
+f-223; 2000$-3000$
+f-224; 3000$-4000$
+f-225; AcerA515
+f-226; MsiTitanGT77
+f-227; Slealth14
+f-228; AsusGameTuf
+f-229; LenovoFX203
+f-230; HuaweiMateBook
+f-231; Corebook14
+f-232; AcerExtensa15
+f-233; LenovoIdeaPad
+f-234; с_подсветкой
+f-235; с_подсветкой_и_usb
+f-236; с_подсветкой_и_ОС
+f-237; с_подсветкой_и_ОС_и_usb
+f-238; с_ОС
+f-239; с_ОС_и_usb
+f-240; с_доп_usb
+f-241; c_запасным_аккумулятором
+f-242; с_гарнитурой
+f-243; с_охлаждающей_подставкой
+f-244; с_чехлом
+f-245; с_чехлом_и_подставкой
+f-246; с_сумкой_для_ноутбука
+f-247; с_сумкой_для_ноутбука_и_подставкой
+f-248; с_сумкой_для_ноутбука_и_чехлом
+f-249; с_сумкой_для_ноутбука_и_чехлом_и_подставкой
+f-250; limited_edition
+r-1;fia-1;f-201; 16_ядер => AMDRyzen9; 0.8
+r-2;fia-1;f-202; 16_ядер => IntelCorei9;0.43
+r-3;fic-68;f-203; 64ГБ => Corsar64GB;0.76
+r-4;fic-68;f-204; 64ГБ => HyperX64GB;0.58
+r-5;fil-39;f-205; 4070 => GeForce4070;1
+r-6;fib-10;f-206; 4000$ => 3000$-4000$;0.95
+r-7;f-201,f-205,f-203,f-206;f-207;AMDRyzen9, GeForce4070, Corsar64GB, 3000$-4000$ => Predator4100;0.97
+r-8;fn-89,fn-97,fn-92,fn-95,fn-98,fn-23,fn-108,fn-111;f-208;Есть все отрицания фич => базовая_версия;1
+r-9;f-207,f-208;ff-103; Predator4100,  базовая_версия => Predator4100Pro;0.95
+r-10;fia-2;f-209; 12_ядер => AMDRyzen7;0.87
+r-11;fia-2;f-210; 12_ядер => IntelCorei7;0.47
+r-12;fia-3;f-211; 8_ядер => AMDRyzen5;0.92
+r-13;fia-3;f-212; 8_ядер => IntelCorei5;0.41
+r-14;fia-4;f-213; 4_ядра => AMDRyzen3;0.87
+r-15;fia-4;f-214; 4_ядра => IntelCorei3;0.49
+r-16;fia-5;f-215; 2_ядра => Pentium2;0.99
+r-17;fia-6;f-216; 6_ядер => AMDFX6300;0.98
+r-18;fil-40;f-217; 3050 => GeForce3050;0.97
+r-19;fil-41;f-218; 2050 => GeForce2050;0.98
+r-20;fil-42;f-219; 1650 => GeForce1650;0.99
+r-21;fib-7;f-221; 1000$ => 0$-1000$;0.93
+r-22;fib-8;f-222; 2000$ => 1000$-2000$;0.95
+r-23;fib-9;f-223; 3000$ => 2000$-3000$;0.87
+r-24;f-215,f-220,fic-33,f-221;f-225;Pentium2, встроенная, 4ГБ, 0$-1000$ => AcerA515;0.87
+r-25;f-202,f-205,f-204,f-206;f-226;IntelCorei9, GeForce4070,HyperX64GB,3000$-4000$ => MsiTitanGT77;0.87
+r-26;f-210,f-217,fic-32,f-223;f-227;IntelCorei7,GeForce3050,32ГБ, 2000$-3000$ =>Slealth14;0.87
+r-27;f-209,f-217,fic-32,f-223;f-228;AMDRyzen7,GeForce3050,32ГБ, 2000$-3000$=>AsusGameTuf;0.87
+r-28;f-212,f-218,fic-66,f-222;f-229;IntelCorei5,GeForce2050,16ГБ, 1000$-2000$ =>LenovoFX203;0.87
+r-29;f-211,f-218,fic-66,f-222;f-230;AMDRyzen5,GeForce2050,16ГБ, 1000$-2000$ =>HuaweiMateBook;0.87
+r-30;f-214,f-219,fic-31,f-221;f-231;IntelCorei3, GeForce1650, 8ГБ, 0$-1000$ => Corebook14;0.87
+r-31;f-213,f-219,fic-31,f-221;f-232;AMDRyzen3, GeForce1650, 8ГБ, 0$-1000$ => AcerExtensa15;0.87
+r-32;f-216,f-220,fic-33,f-221;f-233;AMDFX6300, встроенная, 4ГБ, 0$-1000$  => LenovoIdeaPad;0.87
+r-33;fi-17,fn-97,fn-23,fn-92,fn-95,fn-98,fn-108,fn-111;f-234;с_подсветкой;0.87
+r-34;fi-17,fn-97,fi-30,fn-92,fn-95,fn-98,fn-108,fn-111;f-235;с_подсветкой_и_usb;0.87
+r-35;fi-17,fi-22,fn-23,fn-92,fn-95,fn-98,fn-108,fn-111;f-236;с_подсветкой_и_ОС;0.87
+r-36;fi-17,fi-22,fi-30,fn-92,fn-95,fn-98,fn-108,fn-111;f-237;с_подсветкой_и_ОС_и_usb;0.87
+r-37;fn-89,fi-22,fn-23,fn-92,fn-95,fn-98,fn-108,fn-111;f-238;с_ОС;0.87
+r-38;fn-89,fi-22,fi-30,fn-92,fn-95,fn-98,fn-108,fn-111;f-239;с_ОС_и_usb;0.87
+r-39;fn-89,fn-97,fi-30,fn-92,fn-95,fn-98,fn-108,fn-111;f-240;с_доп_usb;0.87
+r-40;fn-89,fn-97,fn-23,fi-24,fn-95,fn-98,fn-108,fn-111;f-241;c_запасным_аккумулятором;0.87
+r-41;fn-89,fn-97,fn-23,fn-92,fi-26,fn-98,fn-108,fn-111;f-242; с_гарнитурой;0.87
+r-42;fn-89,fn-97,fn-23,fn-92,fn-95,fi-28,fn-108,fn-111;f-243; с_охлаждающей_подставкой;0.87
+r-43;fn-89,fn-97,fn-23,fn-92,fn-95,fn-98,fi-107,fn-111;f-244; с_чехлом;0.87
+r-44;fn-89,fn-97,fn-23,fn-92,fn-95,fi-28,fi-107,fn-111;f-245; с_чехлом_и_подставкой;0.87
+r-45;fn-89,fn-97,fn-23,fn-92,fn-95,fn-98,fn-108,fi-110;f-246; с_сумкой_для_ноутбука;0.87
+r-46;fn-89,fn-97,fn-23,fn-92,fn-95,fi-28,fn-108,fi-110;f-247; с_сумкой_для_ноутбука_и_подставкой;0.87
+r-47;fn-89,fn-97,fn-23,fn-92,fn-95,fn-98,fi-107,fi-110;f-248; с_сумкой_для_ноутбука_и_чехлом;0.87
+r-48;fn-89,fn-97,fn-23,fn-92,fn-95,fi-28,fi-107,fi-110;f-249; с_сумкой_для_ноутбука_и_чехлом_и_подставкой;0.87
+r-49;fi-17,fi-22,fi-30,fi-24,fi-26,fi-28,fi-107,fi-110;f-250; limited_edition;0.87
+r-50;f-225,f-208;ff-73; AcerA515, базовая_версия => AcerA515Base;0.87
+r-51;f-225,f-208;ff-46; AcerA515, базовая_версия => AcerA515HPhones;0.87
+r-52;f-225,f-242;ff-46; AcerA515, с_гарнитурой => AcerA515HPhones;0.87
+r-53;f-207,f-237;ff-103; Predator4100, с_подсветкой_и_ОС_и_usb => Predator4100Pro;0.87
+r-54;f-207,f-239;ff-103; Predator4100, с_ОС_и_usb => Predator4100Pro;0.87
+r-55;f-207,f-234;ff-103; Predator4100, с_подсветкой => Predator4100Pro;0.87
+r-56;f-207,f-238;ff-103; Predator4100, с_ОС => Predator4100Pro;0.87
+r-57;f-207,f-240;ff-103; Predator4100, с_доп_usb => Predator4100Pro;0.87
+r-58;f-207,f-236;ff-103; Predator4100,с_подсветкой_и_ОС=> Predator4100Pro;0.87
+r-59;f-207,f-235;ff-103; Predator4100,с_подсветкой_и_usb=> Predator4100Pro;0.87
+r-60;f-207,f-249;ff-343; Predator4100, с_сумкой_для_ноутбука_и_чехлом_и_подставкой => Predator4100Large;0.87
+r-61;f-207,f-248;ff-343; Predator4100, с_сумкой_для_ноутбука_и_чехлом => Predator4100Large;0.87
+r-62;f-207,f-247;ff-343; Predator4100, с_сумкой_для_ноутбука_и_подставкой => Predator4100Large;0.87
+r-63;f-207,f-245;ff-343; Predator4100, с_чехлом_и_подставкой => Predator4100Large;0.87
+r-64;f-207,f-246;ff-343; Predator4100, с_сумкой_для_ноутбука => Predator4100Large;0.87
+r-65;f-207,f-244;ff-343; Predator4100, с_чехлом => Predator4100Large;0.87
+r-66;f-207,f-243;ff-343; Predator4100, с_охлаждающей_подставкой => Predator4100Large;0.87
+r-67;f-207,f-208;ff-343; Predator4100,  базовая_версия => Predator4100Large;0.87
+r-68;f-226,f-208;ff-45; MsiTitanGT77,  базовая_версия => MsiTitanGT77Pro;0.87
+r-69;f-226,f-238;ff-45; MsiTitanGT77, с_ОС => MsiTitanGT77Pro;0.87
+r-70;f-226,f-234;ff-45; MsiTitanGT77, с_подсветкой => MsiTitanGT77Pro;0.87
+r-71;f-226,f-236;ff-45; MsiTitanGT77, с_подсветкой_и_ОС => MsiTitanGT77Pro;0.87
+r-72;f-226,f-248;ff-44; MsiTitanGT77, с_сумкой_для_ноутбука_и_чехлом => MsiTitanGT77Cute;0.87
+r-73;f-226,f-246;ff-44; MsiTitanGT77, с_сумкой_для_ноутбука => MsiTitanGT77Cute;0.87
+r-74;f-226,f-244;ff-44; MsiTitanGT77, с_чехлом => MsiTitanGT77Cute;0.87
+r-75;f-226,f-208;ff-44; MsiTitanGT77,  базовая_версия => MsiTitanGT77Cute;0.87
+r-76;f-227,f-208;ff-47; Slealth14, базовая_версия=>Slealth14Add;0.87
+r-77;f-227,f-240;ff-47; Slealth14,с_доп_usb=>Slealth14Add;0.87
+r-78;f-227,f-237;ff-48; Slealth14, с_подсветкой_и_ОС_и_usb=>Slealth14Pro;0.87
+r-79;f-227,f-236;ff-48; Slealth14, с_подсветкой_и_ОС=>Slealth14Pro;0.87
+r-80;f-227,f-235;ff-48; Slealth14, с_подсветкой_и_usb=>Slealth14Pro;0.87
+r-81;f-227,f-239;ff-48; Slealth14, с_ОС_и_usb => Slealth14Pro;0.87
+r-82;f-227,f-238;ff-48; Slealth14, с_ОС => Slealth14Pro;0.87
+r-83;f-227,f-240;ff-48; Slealth14, с_доп_usb => Slealth14Pro;0.87
+r-84;f-227,f-234;ff-48; Slealth14, с_подсветкой => Slealth14Pro;0.87
+r-85;f-227,f-208;ff-48; Slealth14, базовая_версия => Slealth14Pro;0.87
+r-86;f-227,f-208;ff-49; Slealth14 ,базовая_версия =>Slealth14Base;0.87
+r-87;f-228,f-208;ff-50; AsusGameTuf,  базовая_версия => AsusGameTufGreat;0.87
+r-88;f-228,f-249;ff-50; AsusGameTuf, с_сумкой_для_ноутбука_и_чехлом_и_подставкой => AsusGameTufGreat;0.87
+r-89;f-228,f-248;ff-50; AsusGameTuf, с_сумкой_для_ноутбука_и_чехлом => AsusGameTufGreat;0.87
+r-90;f-228,f-247;ff-50; AsusGameTuf, с_сумкой_для_ноутбука_и_подставкой => AsusGameTufGreat;0.87
+r-91;f-228,f-245;ff-50; AsusGameTuf, с_чехлом_и_подставкой => AsusGameTufGreat;0.87
+r-92;f-228,f-246;ff-50; AsusGameTuf, с_сумкой_для_ноутбука => AsusGameTufGreat;0.87
+r-93;f-228,f-244;ff-50; AsusGameTuf, с_чехлом => AsusGameTufGreat;0.87
+r-94;f-228,f-243;ff-50; AsusGameTuf, с_охлаждающей_подставкой =>AsusGameTufGreat;0.87
+r-95;f-228,f-208;ff-52; AsusGameTuf, базовая_версия => AsusGameTufLight;0.87
+r-96;f-228,f-234;ff-52; AsusGameTuf, с_подсветкой => AsusGameTufLight;0.87
+r-97;f-228,f-208;ff-53; AsusGameTuf, базовая_версия => AsusGameTufLarge;0.87
+r-98;f-228,f-241;ff-53; AsusGameTuf, c_запасным_аккумулятором => AsusGameTufLarge;0.87
+r-99;f-229,f-208;ff-55; LenovoFX203, базовая_версия => LenovoFX203Base;0.87
+r-100;f-229,f-208;ff-54; LenovoFX203,  базовая_версия => LenovoFX203Pro;0.87
+r-101;f-229,f-237;ff-54; LenovoFX203, с_подсветкой_и_ОС_и_usb => LenovoFX203Pro;0.87
+r-102;f-229,f-236;ff-54; LenovoFX203,с_подсветкой_и_ОС=> LenovoFX203Pro;0.87
+r-103;f-229,f-235;ff-54; LenovoFX203,с_подсветкой_и_usb=> LenovoFX203Pro;0.87
+r-104;f-229,f-239;ff-54; LenovoFX203, с_ОС_и_usb => LenovoFX203Pro;0.87
+r-105;f-229,f-234;ff-54; LenovoFX203, с_подсветкой => LenovoFX203Pro;0.87
+r-106;f-229,f-238;ff-54; LenovoFX203, с_ОС => LenovoFX203Pro;0.87
+r-107;f-229,f-240;ff-54; LenovoFX203, с_доп_usb => LenovoFX203Pro;0.87
+r-108;f-230,f-208;ff-57; HuaweiMateBook,  базовая_версия => HuaweiMateBookPro;0.87
+r-109;f-230,f-208;ff-56; HuaweiMateBook, базовая_версия=> HuaweiMateBookBase;0.87
+r-110;f-230,f-249;ff-57; HuaweiMateBook, с_сумкой_для_ноутбука_и_чехлом_и_подставкой=> HuaweiMateBookPro;0.87
+r-111;f-230,f-248;ff-57; HuaweiMateBook, с_сумкой_для_ноутбука_и_чехлом => HuaweiMateBookPro;0.87
+r-112;f-230,f-247;ff-57; HuaweiMateBook, с_сумкой_для_ноутбука_и_подставкой =>HuaweiMateBookPro;0.87
+r-113;f-230,f-245;ff-57; HuaweiMateBook, с_чехлом_и_подставкой => HuaweiMateBookPro;0.87
+r-114;f-230,f-246;ff-57; HuaweiMateBook, с_сумкой_для_ноутбука => HuaweiMateBookPro;0.87
+r-115;f-230,f-244;ff-57; HuaweiMateBook, с_чехлом =>HuaweiMateBookPro;0.87
+r-116;f-230,f-243;ff-57; HuaweiMateBook, с_охлаждающей_подставкой =>HuaweiMateBookPro;0.87
+r-117;f-230,f-208;ff-58; HuaweiMateBook, базовая_версия => HuaweiMateBookOS;0.87
+r-118;f-230,f-238;ff-58; HuaweiMateBook, с_ОС => HuaweiMateBookOS;0.87
+r-119;f-231,f-208;ff-60; Corebook14, базовая_версия=> Corebook14Base;0.87
+r-120;f-231,f-208;ff-59; Corebook14, базовая_версия => Corebook14Pro;0.87
+r-121;f-231,f-246;ff-59; Corebook14, с_сумкой_для_ноутбука => Corebook14Pro;0.87
+r-122;f-231,f-208;ff-61; Corebook14, базовая_версия => Corebook14OS;0.87
+r-123;f-231,f-238;ff-61; Corebook14, с_ОС => Corebook14OS;0.87
+r-124;f-232,f-208;ff-62; AcerExtensa15, базовая_версия=>AcerExtensa15Base;0.87
+r-125;f-232,f-208;ff-63; AcerExtensa15, базовая_версия=>AcerExtensa15Pro;0.87
+r-126;f-232,f-236;ff-63; AcerExtensa15, с_подсветкой_и_ОС=>AcerExtensa15Pro;0.87
+r-127;f-232,f-234;ff-63; AcerExtensa15, с_подсветкой=>AcerExtensa15Pro;0.87
+r-128;f-232,f-238;ff-63; AcerExtensa15, с_ОС=>AcerExtensa15Pro;0.87
+r-129;f-232,f-208;ff-64; AcerExtensa15, базовая_версия =>AcerExtensa15OS;0.87
+r-130;f-232,f-238;ff-64; AcerExtensa15, с_ОС =>AcerExtensa15OS;0.87
+r-131;f-233,f-208;ff-65; LenovoIdeaPad, базовая_версия=> LenovoIdeaPadBase;0.87
+r-132;f-233,f-208;ff-666; LenovoIdeaPad, базовая_версия => LenovoIdeaPadPro;0.87
+r-133;f-233,f-242;ff-666; LenovoIdeaPad, с_гарнитурой => LenovoIdeaPadPro;0.87
+r-134;f-233,f-208;ff-67; LenovoIdeaPad, базовая_версия => LenovoIdeaPadOC;0.87
+r-135;f-233,f-238;ff-67; LenovoIdeaPad, с_ОС => LenovoIdeaPadOC;0.87

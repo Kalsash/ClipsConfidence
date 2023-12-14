@@ -99,11 +99,11 @@
 	=>
 	(retract ?premise)
 	(assert (fact (num 5000)(description "Про фичи ещё не спрашивали")))
-	(assert (fact (num 5001)(description "Про место ещё не спрашивали")))
-	(assert (fact (num 5002)(description "Про компанию ещё не спрашивали")))
-	(assert (fact (num 5003)(description "Про алкоголь ещё не спрашивали")))
+	(assert (fact (num 5001)(description "Про видеокарты ещё не спрашивали")))
+	(assert (fact (num 5002)(description "Про оперативку ещё не спрашивали")))
+	(assert (fact (num 5003)(description "Про процессор ещё не спрашивали")))
 	(assert (fact (num 5004)(description "Про бюджет ещё не спрашивали")))
-	(assert (appendmessagehalt "Здравствуйте, Максим Валентинович!!"))
+	(assert (appendmessagehalt "Вывод:"))
 )
 
 (defrule askforfeatures
@@ -111,52 +111,44 @@
 	?premise <- (fact (num 5000)(description "Про фичи ещё не спрашивали"))
 	=>
 	(retract ?premise)
-	(assert (appendanswer "17-Есть настольный футбол-89-Настольный футбол не обязателен"))
-	(assert (appendanswer "22-Можно сидеть после закрытия-97-Нет необходимости сидеть после закрытия"))
-	(assert (appendanswer "30-Не требуется QR код-23-Все равно проверяют ли QR кода"))
-	(assert (appendanswer "24-Есть кальян-92-Кальян не обязателен"))
-	(assert (appendanswer "26-Есть кухня-95-Кухня не обязательна"))
-	(assert (appendanswer "28-Милые официанты-98-Устроят обычные официанты"))
-	(assert (appendanswer "107-Хочу кота!-108-Кот не обязателен"))
-	(assert (appendanswer "110-Есть столики на улице-111-Нет столиков на улице"))
+	(assert (appendanswer "17-подсветка_клавиатуры-89-подсветка_клавиатуры_не_нужна"))
+	(assert (appendanswer "22-есть_ОС-97-ОС_не_нужна"))
+	(assert (appendanswer "30-два_доп_usb-23-доп_usb_не_нужен"))
+	(assert (appendanswer "24-запасной_аккумулятор-92-запасной_аккумулятор_не_нужен"))
+	(assert (appendanswer "26-гарнитура-95-гарнитура_не_нужна"))
+	(assert (appendanswer "28-охлаждающая_подставка-98-охлаждающая_подставка_не_нужна"))
+	(assert (appendanswer "107-чехол-108-чехол_не_нужен"))
+	(assert (appendanswer "110-сумка_для_ноутбука-111-сумка_для_ноутбука_не_нужна"))
 	(assert (appendmessagehalt "#ask_features"))
 )
 
 
-(defrule askforlocation
-	(declare (salience 20))
-	?premise <- (fact (num 5001)(description ?desc))
-	=>
-	(retract ?premise)
-	(assert (appendanswer "39-Располагается на западном"))
-	(assert (appendanswer "40-Располагается на северном"))
-	(assert (appendanswer "41-Располагается в центре"))
-	(assert (appendmessagehalt "#ask_location"))
-)
-
-(defrule askforcompany
-	(declare (salience 20))
-	?premise <- (fact (num 5002)(description ?desc))
-	=>
-	(retract ?premise)
-	(assert (appendanswer "68-В одиночку"))
-	(assert (appendanswer "32-Вдвоем"))
-	(assert (appendanswer "66-Компания до 4 человек"))
-	(assert (appendanswer "31-Большая компания"))
-	(assert (appendmessagehalt "#ask_company"))
-)
-
-(defrule askfordrinks
+(defrule askforProcessor
 	(declare (salience 20))
 	?premise <- (fact (num 5003)(description ?desc))
 	=>
 	(retract ?premise)
-	(assert (appendanswer "1-Коктейли"))
-	(assert (appendanswer "2-Крепкие напитки"))
-	(assert (appendanswer "3-Пиво"))
-	(assert (appendanswer "4-Сидр"))
-	(assert (appendanswer "5-Вино"))
-	(assert (appendmessagehalt "#ask_drinks"))
+	(assert (appendanswer "2-12_ядер"))
+	(assert (appendanswer "3-8_ядер"))
+	(assert (appendanswer "6-6_ядер"))
+	(assert (appendanswer "4-4_ядра"))
+	(assert (appendanswer "5-2_ядра"))
+	(assert (appendanswer "1-16_ядер"))
+	
+	(assert (appendmessagehalt "#ask_proc"))
+)
+
+(defrule askforGraphicsСard
+	(declare (salience 20))
+	?premise <- (fact (num 5001)(description ?desc))
+	=>
+	(retract ?premise)
+	(assert (appendanswer "40-3050"))
+	(assert (appendanswer "41-2050"))
+	(assert (appendanswer "42-1650"))
+	(assert (appendanswer "43-встроенная"))
+	(assert (appendanswer "39-4070"))
+	(assert (appendmessagehalt "#ask_card"))
 )
 
 (defrule askforbudget
@@ -164,10 +156,24 @@
 	?premise <- (fact (num 5004)(description ?desc))
 	=>
 	(retract ?premise)
-	(assert (appendanswer "6-Посидеть на сотку"))
-	(assert (appendanswer "7-Посидеть на стипендию"))
-	(assert (appendanswer "8-Посидеть на зарплату"))
+	(assert (appendanswer "9-3000$"))
+	(assert (appendanswer "8-2000$"))
+	(assert (appendanswer "7-1000$"))
+	(assert (appendanswer "10-4000$"))
 	(assert (appendmessagehalt "#ask_budget"))
+)
+
+(defrule askforMemory
+	(declare (salience 20))
+	?premise <- (fact (num 5002)(description ?desc))
+	=>
+	(retract ?premise)
+	(assert (appendanswer "32-32ГБ"))
+	(assert (appendanswer "66-16ГБ"))
+	(assert (appendanswer "31-8ГБ"))
+        (assert (appendanswer "33-4ГБ"))
+	(assert (appendanswer "68-64ГБ"))
+	(assert (appendmessagehalt "#ask_memory"))
 )
 
 (defrule fail

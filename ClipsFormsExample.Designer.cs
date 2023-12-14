@@ -57,7 +57,7 @@
             this.panel2.Controls.Add(this.openButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 470);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1317, 66);
             this.panel2.TabIndex = 6;
@@ -65,7 +65,7 @@
             // fontButton
             // 
             this.fontButton.Location = new System.Drawing.Point(409, 14);
-            this.fontButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fontButton.Margin = new System.Windows.Forms.Padding(4);
             this.fontButton.Name = "fontButton";
             this.fontButton.Size = new System.Drawing.Size(160, 37);
             this.fontButton.TabIndex = 9;
@@ -77,7 +77,7 @@
             // 
             this.nextButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.nextButton.Location = new System.Drawing.Point(1140, 14);
-            this.nextButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nextButton.Margin = new System.Windows.Forms.Padding(4);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(160, 37);
             this.nextButton.TabIndex = 8;
@@ -89,7 +89,7 @@
             // 
             this.resetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.resetButton.Location = new System.Drawing.Point(972, 14);
-            this.resetButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(4);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(160, 37);
             this.resetButton.TabIndex = 7;
@@ -100,7 +100,7 @@
             // saveAsButton
             // 
             this.saveAsButton.Location = new System.Drawing.Point(241, 14);
-            this.saveAsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saveAsButton.Margin = new System.Windows.Forms.Padding(4);
             this.saveAsButton.Name = "saveAsButton";
             this.saveAsButton.Size = new System.Drawing.Size(160, 37);
             this.saveAsButton.TabIndex = 6;
@@ -111,7 +111,7 @@
             // openButton
             // 
             this.openButton.Location = new System.Drawing.Point(28, 14);
-            this.openButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.openButton.Margin = new System.Windows.Forms.Padding(4);
             this.openButton.Name = "openButton";
             this.openButton.Size = new System.Drawing.Size(206, 37);
             this.openButton.TabIndex = 5;
@@ -143,7 +143,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.outputBox);
             this.splitContainer1.Size = new System.Drawing.Size(1317, 470);
-            this.splitContainer1.SplitterDistance = 760;
+            this.splitContainer1.SplitterDistance = 575;
             this.splitContainer1.TabIndex = 7;
             // 
             // codeBox
@@ -155,7 +155,7 @@
             this.codeBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.codeBox.Name = "codeBox";
             this.codeBox.ReadOnly = true;
-            this.codeBox.Size = new System.Drawing.Size(760, 470);
+            this.codeBox.Size = new System.Drawing.Size(575, 470);
             this.codeBox.TabIndex = 0;
             this.codeBox.Text = "";
             // 
@@ -168,7 +168,7 @@
             this.outputBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.outputBox.Name = "outputBox";
             this.outputBox.ReadOnly = true;
-            this.outputBox.Size = new System.Drawing.Size(553, 470);
+            this.outputBox.Size = new System.Drawing.Size(738, 470);
             this.outputBox.TabIndex = 0;
             this.outputBox.Text = "";
             this.outputBox.TextChanged += new System.EventHandler(this.outputBox_TextChanged);
@@ -181,7 +181,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(872, 354);
             this.Name = "ClipsFormsExample";
             this.Text = "Конструктор ноутбуков";

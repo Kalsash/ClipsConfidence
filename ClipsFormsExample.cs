@@ -70,27 +70,27 @@ namespace ClipsFormsExample
             AskingDialog form = new AskingDialog();
             if (message.EndsWith("features"))
             {
-                form = new AskingDialog("Можете выбрать интересующие вас фичи, если хотите:", answers, false);
+                form = new AskingDialog("Выберите доп функционал:", answers, false);
             }
-            else if (message.EndsWith("location"))
+            else if (message.EndsWith("card"))
             {
-                form = new AskingDialog("Для продолжения выберите место, где хотите выпить:", answers, true);
+                form = new AskingDialog("Какие видеокарты вас интересуют?", answers, true);
             }
-            else if (message.EndsWith("company"))
+            else if (message.EndsWith("memory"))
             {
-                form = new AskingDialog("Для продолжения выберите размер компании:", answers, true);
+                form = new AskingDialog("Сколько оперативной памяти нужно?", answers, true);
             }
             else if (message.EndsWith("budget"))
             {
-                form = new AskingDialog("Для продолжения выберите бюджет:", answers, true);
+                form = new AskingDialog("Каков ваш бюджет?", answers, true);
             }
-            else if (message.EndsWith("drinks"))
+            else if (message.EndsWith("proc"))
             {
-                form = new AskingDialog("Для продолжения выберите что будете пить:", answers, true);
+                form = new AskingDialog("Какие процеесоры вас интересуют?", answers, true);
             }
             else
             {
-                throw new Exception("Упс... Кажется, я сломал клипс...");
+                throw new Exception("Ошибка с Clips");
             }
             form.ShowDialog(this);
             selectedFacts = form.SelectedFacts;
@@ -148,10 +148,10 @@ namespace ClipsFormsExample
                     }
                     else
                     {
-                        var builder = new PromptBuilder();
-                        builder.AppendTextWithPronunciation("Установите", "ʊstənɐˈvʲitʲe");
-                        builder.AppendBreak(PromptBreak.Medium);
-                        builder.AppendText("насколько уверенно вы хотите видеть каждую из фич");
+                        //var builder = new PromptBuilder();
+                        //builder.AppendTextWithPronunciation("Установите", "ʊstənɐˈvʲitʲe");
+                        //builder.AppendBreak(PromptBreak.Medium);
+                        //builder.AppendText("насколько уверенно вы хотите видеть каждую из фич");
                         //roboWoman.SpeakAsync(builder);
                     }
                     
@@ -159,7 +159,7 @@ namespace ClipsFormsExample
                     var phrases = new List<string>();
                     if (vamf.Count > 0)
                     {
-                        outputBox.AppendText("----------------------------------------------------" + System.Environment.NewLine, Color.DarkBlue);
+                        outputBox.AppendText("----------------------------------------------------" + System.Environment.NewLine, Color.Brown);
                         for (int j = 0; j < vamf.Count; j++)
                         {
                             //  Варианты !!!!!
@@ -167,9 +167,9 @@ namespace ClipsFormsExample
                             byte[] bytess = Encoding.Default.GetBytes(va.Value);
                             string messagee = Encoding.UTF8.GetString(bytess);
                             phrases.Add(messagee);
-                            outputBox.AppendText("Добавлен вариант для распознавания " + messagee + System.Environment.NewLine, Color.DarkBlue);
+                            outputBox.AppendText("Добавлен вариант для распознавания " + messagee + System.Environment.NewLine, Color.Brown);
                         }
-                        outputBox.AppendText("----------------------------------------------------" + System.Environment.NewLine, Color.DarkBlue);
+                        outputBox.AppendText("----------------------------------------------------" + System.Environment.NewLine, Color.Brown);
                     }
                     
                     askSomeQuestion(message, phrases);
@@ -177,7 +177,7 @@ namespace ClipsFormsExample
                 }
                 else if (message.StartsWith("#"))
                 {
-                    outputBox.AppendText(message + System.Environment.NewLine, Color.DarkRed);
+                    outputBox.AppendText(message + System.Environment.NewLine, Color.Green);
                     var parts = message.Split('|');
                     finalChoice.Add(new KeyValuePair<string,double>(parts[1],double.Parse(parts[3],CultureInfo.InvariantCulture)));
                 }

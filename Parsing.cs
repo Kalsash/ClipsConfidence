@@ -119,12 +119,12 @@ namespace ClipsFormsExample
                 {
                     sb.Append($"(assert (appendmessagehalt (str-cat\"");
                 }
-                sb.AppendLine($"[Применили правило #{rule.Key}:");
+                sb.AppendLine($"Применили правило #{rule.Key}:");
                 for (int i = 0; i < rule.Value.premises.Count; i++)
                 {
-                    sb.AppendLine($"/f-{rule.Value.premises[i]}: \" ?desc{i} \" [~\" ?cert{i} \"]/");
+                    sb.AppendLine($"{rule.Value.premises[i]}: \" ?desc{i} \" (~\" ?cert{i} \"),");
                 }
-                sb.AppendLine($"=> \n /f-{rule.Value.conclusion}: |{facts[rule.Value.conclusion].factDescription}| [|\" ?rule-cert \"|]/,\n или, если по человечески: {rule.Value.comment}]\")))");
+                sb.AppendLine($"=> {rule.Value.conclusion}: {facts[rule.Value.conclusion].factDescription} (\" ?rule-cert \")\")))");
                 sb.AppendLine(")");
                 sb.AppendLine("");
             }
