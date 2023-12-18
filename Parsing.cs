@@ -124,7 +124,7 @@ namespace ClipsFormsExample
                 {
                     sb.AppendLine($"{rule.Value.premises[i]}: \" ?desc{i} \" (~\" ?cert{i} \"),");
                 }
-                sb.AppendLine($"=> {rule.Value.conclusion}: {facts[rule.Value.conclusion].factDescription} (\" ?rule-cert \")\")))");
+                sb.AppendLine($"=> {rule.Value.conclusion}: |{facts[rule.Value.conclusion].factDescription}| (|\" ?rule-cert \"|)\")))");
                 sb.AppendLine(")");
                 sb.AppendLine("");
             }
