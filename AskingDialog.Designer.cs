@@ -64,11 +64,13 @@ namespace ClipsFormsExample
             this.trackBar.Location = new System.Drawing.Point(13, 313);
             this.trackBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBar.Maximum = 100;
+            this.trackBar.Minimum = -100;
             this.trackBar.Name = "trackBar";
             this.trackBar.Size = new System.Drawing.Size(203, 56);
             this.trackBar.TabIndex = 3;
             this.trackBar.TickFrequency = 0;
             this.trackBar.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.trackBar.Value = -100;
             this.trackBar.Scroll += new System.EventHandler(this.trackBar_Scroll);
             // 
             // checkedListBox

@@ -73,14 +73,30 @@ namespace ClipsFormsExample
         double processRuleCertainty(string input)
         {
             var original = double.Parse(input, CultureInfo.InvariantCulture);
-            var scaled = (2 - original) * original; // Увеличиваем на (1 - x)%
+            //var scaled = (2 - original) * original; // Увеличиваем на (1 - x)%
+            var scaled = original;
             if (scaled > 1)
             {
                 return 1;
             }
             return scaled;
         }
-        
+
+        public string Generate(int k)
+        {
+            string s = "";
+            for (int i = 0; i < k - 1; i++)
+            {
+                s += "(cmb " + "?cert" + i + " ";
+            }
+            s += "?cert" + (k - 1);
+            for (int i = 0; i < k - 1; i++)
+            {
+                s += ")";
+            }
+            return s;
+        }
+
         private string generateCLIPScode()
         {
             StringBuilder sb = new StringBuilder();
@@ -106,7 +122,11 @@ namespace ClipsFormsExample
                 }
                 
                 sb.AppendLine("=>");
-                sb.AppendLine($"(bind ?rule-cert (* (min {sbCertainty.ToString()}) {rule.Value.ruleCertainty.ToString(CultureInfo.InvariantCulture)}))");
+                if (rule.Value.premises.Count >= 2)
+                    sb.AppendLine($"(bind ?rule-cert (* {Generate(rule.Value.premises.Count)} {rule.Value.ruleCertainty.ToString(CultureInfo.InvariantCulture)}))");
+                else
+                    sb.AppendLine($"(bind ?rule-cert (* ( min {sbCertainty.ToString()}) {rule.Value.ruleCertainty.ToString(CultureInfo.InvariantCulture)}))");
+
                 sb.AppendLine($"(bind ?ex-fact (nth$ 1 (find-fact ((?f fact))(eq ?f:num {rule.Value.conclusion}))))");
                 sb.AppendLine($"(if (neq ?ex-fact nil)");
                 sb.AppendLine("then (bind ?ex-cert (fact-slot-value ?ex-fact certainty)) (modify ?ex-fact (certainty (-(+ ?ex-cert ?rule-cert)(* ?ex-cert ?rule-cert))))");
